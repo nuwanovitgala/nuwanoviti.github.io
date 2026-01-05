@@ -1,2 +1,29 @@
 
-hello
+<!DOCTYPE html>
+<html ng-app="blogApp">
+<head>
+  <meta charset="UTF-8">
+  <title>My Blog</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="BlogCtrl">
+
+  <h1>My Simple Blog</h1>
+
+  <div class="post" ng-repeat="post in posts">
+    <h2>{{post.title}}</h2>
+    <small>{{post.date}}</small>
+    <p>{{post.content}}</p>
+  </div>
+
+  <script>
+    angular.module('blogApp', [])
+      .controller('BlogCtrl', function ($scope, $http) {
+        $http.get('posts.json').then(function (res) {
+          $scope.posts = res.data;
+        });
+      });
+  </script>
+</body>
+</html>
