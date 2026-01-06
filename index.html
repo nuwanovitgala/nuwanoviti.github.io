@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nuwanoviti Blog</title>
+  <title>Nuwanoviti | Tech Blog</title>
 
   <!-- SEO -->
-  <meta name="description" content="Minimal tech blog by Nuwanoviti">
+  <meta name="description" content="Tech blog by Nuwanoviti – Linux, WordPress, Cloud & DevOps">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap 5 -->
@@ -15,11 +15,16 @@
     body {
       background: #f8f9fa;
     }
-    .post-title {
-      font-weight: 600;
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
     }
     .post {
       margin-bottom: 4rem;
+    }
+    .post-title {
+      font-weight: 600;
     }
     footer {
       font-size: 14px;
@@ -36,11 +41,23 @@
   </div>
 </nav>
 
-<!-- HEADER -->
+<!-- PROFILE / ABOUT -->
 <header class="py-5 text-center">
   <div class="container">
-    <h1 class="fw-bold">Minimal Tech Blog</h1>
-    <p class="text-muted">Linux • WordPress • Cloud</p>
+    <!-- Replace image URL -->
+    <img src="https://via.placeholder.com/140"
+         alt="Nuwanoviti"
+         class="rounded-circle profile-img mb-3">
+
+    <h1 class="fw-bold mb-1">Nuwan Ovitigala</h1>
+    <p class="text-muted mb-2">Linux System Admin • WordPress Developer</p>
+
+    <p class="mx-auto text-muted" style="max-width: 640px;">
+      I’m a Linux system administrator and WordPress developer with a strong
+      interest in cloud infrastructure, automation, and performance optimization.
+      This blog is a collection of my technical notes, experiments, and
+      real-world solutions.
+    </p>
   </div>
 </header>
 
@@ -49,19 +66,21 @@
 
   <article class="post">
     <h2 class="post-title">Hello World</h2>
-    <small class="text-muted">Jan 5, 2026</small>
+    <small class="text-muted">January 5, 2026</small>
     <p class="mt-3">
-      This is a simple one-page blog hosted on GitHub Pages using
-      Twitter Bootstrap. No backend, no build tools, just HTML.
+      This is my personal tech blog hosted on GitHub Pages.
+      I’ll be sharing Linux tips, WordPress optimizations,
+      server configurations, and cloud experiments.
     </p>
   </article>
 
   <article class="post">
-    <h2 class="post-title">Why GitHub Pages?</h2>
-    <small class="text-muted">Jan 6, 2026</small>
+    <h2 class="post-title">Why a One-Page Blog?</h2>
+    <small class="text-muted">January 6, 2026</small>
     <p class="mt-3">
-      GitHub Pages is free, fast, secure, and perfect for technical
-      blogging with zero maintenance.
+      A single HTML page is fast, secure, and maintenance-free.
+      No databases, no frameworks — just clean content served
+      directly from GitHub’s global CDN.
     </p>
   </article>
 
